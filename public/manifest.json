@@ -1,0 +1,45 @@
+{
+  "name": "جروب القرءان الكريم — اختبار يومي",
+  "short_name": "اختبار القرءان",
+  "description": "اختبار يومي في القرءان الكريم. تابع تقدمك واختبر نفسك.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#004243",
+  "theme_color": "#004243",
+  "orientation": "portrait-primary",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "ابدأ الاختبار",
+      "short_name": "الاختبار",
+      "description": "الانتقال مباشرة إلى اختبار اليوم",
+      "url": "/",
+      "icons": [{ "src": "/icon.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "عرض النتيجة",
+      "short_name": "النتيجة",
+      "description": "عرض نتيجة آخر اختبار",
+      "url": "/result",
+      "icons": [{ "src": "/icon.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[build]
+  command = "yarn build"
+  publish = "out"
+
+# Disable Netlify's automatic Next.js Runtime.
+# This project uses `output: 'export'` (fully static), so we
+# do NOT want serverless functions or edge middleware.
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NODE_VERSION = "20"
+
+# SPA fallback: send every unmatched path back to index.html
+# so Next.js client-side routing works correctly.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
